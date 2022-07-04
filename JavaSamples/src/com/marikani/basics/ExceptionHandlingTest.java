@@ -10,7 +10,7 @@ public class ExceptionHandlingTest {
         try {
             testException(-5);
             /**
-             * This won't line execute, after the exception thrown by runtime line below won't be executed inside try block
+             * This line won't execute, after the exception thrown by runtime line below won't be executed inside try block
              */
             testException(15);
         } catch (FileNotFoundException e) {
