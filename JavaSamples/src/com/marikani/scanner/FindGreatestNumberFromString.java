@@ -15,7 +15,6 @@ public class FindGreatestNumberFromString {
 
         String data = "15a2b345c67d8e5,9#10";
         Scanner sc1 = new Scanner(data);
-        System.out.println("Enter your name");
         sc1.useDelimiter("\\D");
         List numbers = new ArrayList();
         while (sc1.hasNext()) {
