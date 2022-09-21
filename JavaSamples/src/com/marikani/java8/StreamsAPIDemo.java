@@ -73,5 +73,7 @@ public class StreamsAPIDemo {
         System.out.println(studentList.stream().
                 filter(student -> student.getClassStudy() == 10).
                 sorted((student1, student2) -> student1.getRank() > student2.getRank() ? 1 : -1));
+
+        studentList.stream().filter(student -> student.getClassStudy() == 10).collect(Collectors.groupingBy(Student::getClassStudy, Collectors.toList())).forEach((id, student) -> System.out.println(student));
     }
 }
