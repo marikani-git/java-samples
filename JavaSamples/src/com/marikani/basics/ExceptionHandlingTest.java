@@ -18,7 +18,7 @@ public class ExceptionHandlingTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println("finally block is exdcuted");
+            System.out.println("finally block is executed");
         }
         System.out.println("back to normal execution flow..");
         testException(5);
